@@ -13,5 +13,5 @@ accountRouter.put('/update/:userId', userController.updateUserProfile);
 
 // Activate/Deactivate user
 accountRouter.patch('/toggle-status/:userId', userController.toggleUserActiveStatus);
-
+accountRouter.get("/allUsers", userController.getAllUsers);
 module.exports = accountRouter;

@@ -106,3 +106,9 @@ exports.toggleUserActiveStatus = async (req, res) => {
         res.status(500).json({ message: 'Error updating user status', error: error.message });
     }
 };
+
+
+exports.getAllUsers= (req,res)=>{
+    const users = User.findAll();
+    res.status(200).json({users})
+}
