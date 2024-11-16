@@ -1,5 +1,5 @@
-const { Notification, User } = require('../models');
-
+const  User = require('../../models/account/accountModel');
+const Notification = require('../../models/core/notification');
 exports.createNotification = async (req, res) => {
   try {
     const { senderId, receiverIds, message } = req.body;
