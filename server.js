@@ -3,14 +3,14 @@ const sequelize = require('./config');
 
 const schoolRoutes = require('./routes/staff/staffRoute'); 
 const accountRouter = require('./routes/account/accountRoutes'); 
-const notificationRouter = require('./routes/core/notificationRouter'); 
+// const notificationRouter = require('./routes/core/notificationRouter'); 
 const app = express();
 
 app.use(express.json());
 
 app.use('/staff', schoolRoutes);
 app.use('/account', accountRouter);
-app.use("/notification",notificationRouter)
+// app.use("/notification",notificationRouter)
 
 
 sequelize.authenticate()

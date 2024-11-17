@@ -1,6 +1,6 @@
 // models/Notification.js
 const { DataTypes } = require('sequelize');
-const sequelize = require('../config'); 
+const sequelize = require('../../config'); 
 const User = require('../account/accountModel'); 
 
 const Notification = sequelize.define('Notification', {
